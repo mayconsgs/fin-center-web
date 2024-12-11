@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinCenter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bgFincenter: "#f0f0fa",
+              primary: "#3AA9BA",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-bgFincenter flex flex-col items-center justify-center min-h-svh"
+  >
+    <section class="flex flex-col items-center gap-10 w-fit px-4 py-4">
+      <img
+        class="mix-blend-multiply object-cover w-64 aspect-[3/1]"
+        src="/images/logo.png"
+        alt="Logo do Fincenter"
+      />
+
+      <div class="flex flex-col items-center gap-8 w-96">
+        <div class="flex flex-row justify-evenly w-full">
+          <a
+            href="/login"
+            class="bg-primary text-center min-w-28 hover:bg-primary-700 text-white font-bold py-2 px-4 rounded-full"
+          >
+            Login
+          </a>
+          <a
+            href="/cadastro"
+            class="border-primary text-center min-w-28 border-2 hover:bg-primary-100 text-primary font-bold py-2 px-4 rounded-full"
+          >
+            Cadastro
+          </a>
+        </div>
+
+        <div>
+          <span>Acessar com outras formas</span>
+        </div>
+
+        <div class="flex flex-row items-end justify-evenly w-full">
+          <button>
+            <img src="/images/apple.svg" alt="apple logo" />
+          </button>
+          <button>
+            <img src="/images/google.svg" alt="google logo" />
+          </button>
+          <button>
+            <img src="/images/facebook.svg" alt="facebook logo" />
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
